@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1036258599722",
+    "firebase_url": "https://dr-weather-2e3bb.firebaseio.com",
+    "project_id": "dr-weather-2e3bb",
+    "storage_bucket": "dr-weather-2e3bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036258599722:android:4cd507210b847730",
+        "android_client_info": {
+          "package_name": "com.magdy.drweather"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036258599722-kvojkugirg4kn1f7ohuge1b63r1vuqk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.magdy.drweather",
+            "certificate_hash": "ba407af59d3556ac4d8da7d8e5aa2dfc641722a7"
+          }
+        },
+        {
+          "client_id": "1036258599722-q8hl44c55a3pnv5th536efoesuk7ojsp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHZ8jm7wC1mRzs2KNycBJ5DS8Tfw8RyJ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036258599722-q8hl44c55a3pnv5th536efoesuk7ojsp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
