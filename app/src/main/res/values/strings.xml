@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Dr. weather</string>
+    <string name="add_data">Add Data of Patent</string>
+    <string name="p_name">Patent name</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="empty_field">Empty Field here</string>
 </resources>
