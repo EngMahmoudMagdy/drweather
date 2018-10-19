@@ -10,4 +10,27 @@
     <string name="s_level">Suger level</string>
     <string name="age">Age</string>
     <string name="submit_data">Submit data</string>
+    <string name="choose_birthday">Choose birthday</string>
+    <string name="heart_rate">Heart rate</string>
+    <string name="gender">Gender</string>
+    <string name="pregnancy">Pregnancy</string>
+    <string-array name="gender">
+        <item>male</item>
+        <item>female</item>
+        <item>not to mention</item>
+    </string-array>
+    <string-array name="yes_no">
+        <item>no</item>
+        <item>yes</item>
+    </string-array>
+    <string-array name="blood">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
 </resources>

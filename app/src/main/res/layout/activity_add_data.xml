@@ -2,10 +2,8 @@
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".UI.AddDataActivity">
+    android:layout_height="match_parent">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -35,17 +33,62 @@
                     android:hint="@string/p_name"
                     android:inputType="text" />
             </android.support.design.widget.TextInputLayout>
-            <android.support.design.widget.TextInputLayout
+            <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <android.support.design.widget.TextInputEditText
+                android:layout_height="wrap_content"
+                android:id="@+id/choose_day"
+                android:text="@string/choose_birthday"
+                android:theme="@style/MyButton"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:id="@+id/date"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/gender"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:layout_marginBottom="4dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginBottom="8dp">
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/gender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/age"
-                    android:singleLine="true"
-                    android:hint="@string/age"
-                    android:inputType="number" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_gravity="center"
+                    android:padding="8dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pregnancy"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:layout_marginBottom="4dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/preg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp" />
+            </LinearLayout>
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_height"
                 android:layout_width="match_parent"
@@ -90,6 +133,39 @@
                     android:id="@+id/l_press"
                     android:singleLine="true"
                     android:hint="@string/l_press"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/heart_rate"
+                    android:singleLine="true"
+                    android:hint="@string/heart_rate"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/blood_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp" />
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/body_temp"
+                    android:singleLine="true"
+                    android:hint="@string/s_level"
                     android:inputType="number" />
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
