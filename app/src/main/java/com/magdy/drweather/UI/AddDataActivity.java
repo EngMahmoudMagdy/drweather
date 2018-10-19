@@ -18,16 +18,25 @@ import butterknife.ButterKnife;
 public class AddDataActivity extends AppCompatActivity {
 
     @BindView(R.id.name) TextInputEditText name;
+    @BindView(R.id.age) TextInputEditText age;
     @BindView(R.id.height) TextInputEditText height ;
     @BindView(R.id.weight) TextInputEditText weight ;
+    @BindView(R.id.h_press) TextInputEditText h_press ;
+    @BindView(R.id.l_press) TextInputEditText l_press ;
+    @BindView(R.id.s_level) TextInputEditText sugar_level;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_data);
         ButterKnife.bind(this);
         name.addTextChangedListener(new MyTextWatcher(name));
+        age.addTextChangedListener(new MyTextWatcher(age));
         height.addTextChangedListener(new MyTextWatcher(height));
         weight.addTextChangedListener(new MyTextWatcher(weight));
+        h_press.addTextChangedListener(new MyTextWatcher(h_press));
+        l_press.addTextChangedListener(new MyTextWatcher(l_press));
+        sugar_level.addTextChangedListener(new MyTextWatcher(sugar_level));
     }
     boolean validateText(TextInputEditText editText)
     {
@@ -35,8 +44,6 @@ public class AddDataActivity extends AppCompatActivity {
             editText.setError(getString(R.string.empty_field));
             requestFocus(editText);
             return false;
-        } else {
-            editText.setError("");
         }
         return true;
     }
@@ -48,10 +55,10 @@ public class AddDataActivity extends AppCompatActivity {
     }
     private class MyTextWatcher implements TextWatcher
     {
-        private View view ;
-        MyTextWatcher(View view)
+        private TextInputEditText editText ;
+        MyTextWatcher(TextInputEditText editText)
         {
-            this.view = view ;
+            this.editText = editText ;
         }
 
         @Override
@@ -66,12 +73,7 @@ public class AddDataActivity extends AppCompatActivity {
 
         @Override
         public void afterTextChanged(Editable editable) {
-            if (editable.toString().trim().isEmpty())
-            {
-                name.setError(getString(R.string.empty_field));
-                return;
-            }
-            validateText((TextInputEditText) view);
+            validateText(editText);
         }
     }
 }
