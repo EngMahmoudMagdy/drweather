@@ -23,6 +23,7 @@ public class PatentData implements Serializable{
         this.low_press = low_press;
         this.age = age;
         this.heart_rate = heart_rate;
+        this.is_new = is_new;
     }
 
     public String getGender() {
